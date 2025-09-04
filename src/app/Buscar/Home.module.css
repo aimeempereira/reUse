@@ -1,0 +1,26 @@
+.safeArea {
+  min-height: 100vh; /* ocupa a altura total da tela */
+  display: flex;
+  align-items: center; /* centraliza vertical */
+  justify-content: center; /* centraliza horizontal */
+  background-color: #f3f4f6; /* bg-gray-100 do Tailwind */
+}
+
+.container {
+  background-color: #ffffff; /* branco */
+  padding: 24px; /* equivalente a p-6 */
+  border-radius: 16px; /* rounded-xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+}
+
+.title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 16px; /* mb-4 */
+}
+
+.subtitle {
+  color: #4b5563; /* text-gray-700 */
+  margin-bottom: 24px; /* mb-6 */
+}
+

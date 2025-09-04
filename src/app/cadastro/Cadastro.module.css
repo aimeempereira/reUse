@@ -1,0 +1,75 @@
+.container {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: #FBFBFB;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  position: relative; /* mantém o posicionamento relativo do container */
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 30px;
+  position: relative; /* adicionado para que a seta fique dentro do inner */
+}
+
+.logo {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #2A2B67;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  background-color: #2A2B67;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px;
+  border: none;
+}
+
+.signupLink {
+  margin-top: 40px;
+  color: #2A2B67;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ícone de voltar */
+.backIcon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 10; /* garante que fique acima do conteúdo */
+}

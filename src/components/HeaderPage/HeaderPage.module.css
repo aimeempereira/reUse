@@ -1,0 +1,21 @@
+.header {
+  display: flex; /* flexDirection: 'row' */
+  align-items: center; /* alignItems: 'center' */
+  justify-content: space-between; /* justifyContent: 'space-between' */
+  padding: 16px; /* padding: 16 */
+  border-bottom: 1px solid #eee; /* borderBottomWidth + borderBottomColor */
+}
+
+.headerTitle {
+  flex: 1; /* flex: 1 */
+  font-size: 18px; /* fontSize */
+  font-weight: bold; /* fontWeight */
+  color: #1D1E4C; /* color */
+  text-align: center; /* textAlign */
+}
+
+.backButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

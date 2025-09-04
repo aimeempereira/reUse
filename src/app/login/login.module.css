@@ -1,0 +1,120 @@
+.container {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: #FBFBFB;
+  display: flex;
+  justify-content: center; /* agora centraliza verticalmente */
+  align-items: center;
+  padding-top: 0; /* remove o espaço extra no topo */
+  position: relative;
+}
+
+
+.inner {
+  width: 100%;
+  max-width: 400px; /* mesmo que cadastro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 40px 30px; /* padding inferior como cadastro */
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.logo {
+  margin-bottom: 32px; /* igual cadastro */
+}
+
+.backArrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 10;
+  color: #2A2B67; /* mesma cor do cadastro */
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #2A2B67;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.loginButton {
+  width: 100%;
+  height: 48px;
+  background-color: #2A2B67; /* cor igual ao botão de cadastro */
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px;
+  border: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.loginButton:hover {
+  background-color: #1e1f5c; /* ligeiramente mais escuro */
+  transform: scale(1.02);
+}
+
+/* Social Login */
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.socialButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.socialButton:hover {
+  background-color: #f9fafb;
+  transform: scale(1.02);
+}
+
+.signup {
+  margin-top: 40px; /* igual cadastro */
+  font-size: 14px;
+  color: #2A2B67;
+  text-align: center;
+}
+
+.signup a {
+  color: #2A2B67;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  color: #2A2B67;
+}
