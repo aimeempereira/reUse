@@ -22,6 +22,7 @@ export default function LoginPage() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/main");
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error:any) {
       console.error(error);
       alert("Erro ao fazer login com email");
@@ -35,6 +36,7 @@ export default function LoginPage() {
       const token = await result.user.getIdToken();
       localStorage.setItem("user_token", token);
       router.push("/main");
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error:any) {
       console.error(error);
       alert("Erro ao fazer login com Google");
@@ -48,6 +50,7 @@ export default function LoginPage() {
       const token = await result.user.getIdToken();
       localStorage.setItem("user_token", token);
       router.push("/main");
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error:any) {
       console.error(error);
       alert("Erro ao fazer login com Facebook");

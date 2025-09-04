@@ -36,6 +36,7 @@ export default function CadastroPage() {
 
       alert("Conta criada com sucesso!");
       router.push("/login");
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.error(error.code);
       if (error.code === "auth/email-already-in-use") {
