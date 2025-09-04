@@ -26,7 +26,8 @@ export default function CepArea() {
         setLocalInfo(`${data.localidade} - ${data.uf} | ${data.bairro}`);
         setModalVisible(false);
       }
-    } catch (error) {
+    } catch (error:any) {
+      console.error(error)
       setLocalInfo("Erro ao buscar CEP");
     }
   };
