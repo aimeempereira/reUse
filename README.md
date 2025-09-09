@@ -83,21 +83,21 @@ reuse/
  ├── package.json         # Dependências do projeto
  └── README.md            # Documentação
 
-
+```bash
 🚀 Como rodar o projeto
 
-1.Clone o repositório:
-bash
-
+# 1. Clone o repositório
 git clone https://github.com/D4nilo-Rocha/reUse.git
 
-2. Acesse a pasta do projeto:
+# 2. Acesse a pasta do projeto
 cd reuse
 
-3.Instale as dependências:
+# 3. Instale as dependências
 npm install
 # ou
 yarn install
 
-4.Inicie o servidor de desenvolvimento:
+# 4. Inicie o servidor de desenvolvimento
 yarn dev
+```
+
