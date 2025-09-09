@@ -98,4 +98,8 @@ yarn install
 ```bash
 yarn dev
 ```
+# 5. Link do projeto na Vercel
+```bash
+https://re-use-alpha.vercel.app
+```
 
