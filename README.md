@@ -73,7 +73,7 @@ O objetivo é promover a **sustentabilidade e o reaproveitamento de itens**, ofe
 
 ## 📂 Estrutura do Projeto
 
-```bash
+bash
 reuse/
  ├── prisma/              # Configurações do Prisma ORM
  ├── app/                 # Páginas e rotas da aplicação
@@ -83,21 +83,25 @@ reuse/
  ├── package.json         # Dependências do projeto
  └── README.md            # Documentação
 
-```bash
+
 🚀 Como rodar o projeto
 
 # 1. Clone o repositório
+```bash
 git clone https://github.com/D4nilo-Rocha/reUse.git
-
+```
 # 2. Acesse a pasta do projeto
+```bash
 cd reuse
-
+```
 # 3. Instale as dependências
+```bash
 npm install
 # ou
 yarn install
-
+```
 # 4. Inicie o servidor de desenvolvimento
+```bash
 yarn dev
 ```
 
