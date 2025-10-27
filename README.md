@@ -1,3 +1,7 @@
+Retirado originalmente do repositório utilizado para a atividade 2 da Fase 5: https://github.com/D4nilo-Rocha/reUse.git
+
+Mudanças feitas: adição do Watson Assistant
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
