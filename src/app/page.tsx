@@ -7,6 +7,30 @@ export default function LandingPage() {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
+// Watson Assistant integration
+  useEffect(() => {
+    window.watsonAssistantChatOptions = {
+      integrationID: "e42bd378-6210-42fd-b73a-c436fe158339",
+      region: "us-south",
+      serviceInstanceID: "e9570b59-3a6c-4128-8364-6e233c67c2b3",
+      onLoad: async (instance: any) => {
+        await instance.render();
+      },
+    };
+
+    const script = document.createElement("script");
+    script.src =
+      "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+      (window.watsonAssistantChatOptions.clientVersion || "latest") +
+      "/WatsonAssistantChatEntry.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+  
   // Detecta scroll
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
