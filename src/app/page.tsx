@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function LandingPage() {
-  const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
 
 // Watson Assistant integration
@@ -13,9 +12,9 @@ export default function LandingPage() {
       integrationID: "e42bd378-6210-42fd-b73a-c436fe158339",
       region: "us-south",
       serviceInstanceID: "e9570b59-3a6c-4128-8364-6e233c67c2b3",
-      onLoad: async (instance: any) => {
-        await instance.render();
-      },
+      onLoad: async (instance: { render: () => Promise<void> }) => { 
+  await instance.render(); 
+},
     };
 
     const script = document.createElement("script");
@@ -29,13 +28,6 @@ export default function LandingPage() {
     return () => {
       document.head.removeChild(script);
     };
-  }, []);
-  
-  // Detecta scroll
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Detecta quando elementos aparecem na tela
